@@ -1,28 +1,35 @@
 # The Veilborn — Biome Index
 
-> **Status:** Working design index. Biome names, concepts, mechanics, and the planned count may change. Planned features are not guarantees.
+> **Status:** The ten biome names below are agreed. Their detailed concepts, mechanics, generation, and implementation remain provisional and may change. Planned features are not guarantees.
 
-This file is the short index for The Veilborn's biomes. Detailed designs belong in each biome's own directory once a biome has been selected.
+This is the short index for The Veilborn's ten planned biomes. Each biome has its own directory for focused design notes. A selected name does not mean every detail of that biome is finalized.
 
-## Biome directory
+## Biome roster
 
-No individual biome names are finalized in this structure yet. Add a biome here only when its concept has been selected for further design.
+| # | Biome | Directory | Current identity |
+|---:|---|---|---|
+| 1 | The Open Expanse | [open-expanse/](open-expanse/) | Vast floating landscapes and distant horizons |
+| 2 | The Silver Sea | [silver-sea/](silver-sea/) | The mysterious silver ocean |
+| 3 | The Pale Wilds | [pale-wilds/](pale-wilds/) | Pale wilderness and drifting mist |
+| 4 | The Shattered Heights | [shattered-heights/](shattered-heights/) | Fractured mountains and suspended terrain |
+| 5 | The Resonant Fields | [resonant-fields/](resonant-fields/) | Landscapes associated with mysterious resonance |
+| 6 | The Gravity Fracture | [gravity-fracture/](gravity-fracture/) | A region of disrupted gravity |
+| 7 | The Fallen Monuments | [fallen-monuments/](fallen-monuments/) | Monumental ruins of the vanished civilization |
+| 8 | The Silent Remnants | [silent-remnants/](silent-remnants/) | Unsettling remains of the ancient world |
+| 9 | The Veiled Reach | [veiled-reach/](veiled-reach/) | A distant, obscured region beyond the familiar |
+| 10 | The Outer Veil | [outer-veil/](outer-veil/) | A mysterious outer region of the dimension |
 
-| Biome | Brief description | Status |
-|---|---|---|
-| To be decided | Individual biome concepts remain under discussion. | Planning |
+These short identities are starting points only. They do not lock in biome boundaries, exact terrain, gameplay rules, rarity, or progression.
 
 ## Per-biome documentation
 
-Each selected biome should have its own directory containing:
+Each biome directory contains:
 
-- `general.md` — core identity, purpose, signature features, and design goals.
+- `general.md` — identity, purpose, signature features, and design goals.
 - `atmosphere.md` — visual mood, lighting, fog, weather, particles, and sound.
 - `generation.md` — terrain shape, placement, rarity, and transitions.
 - `mechanics.md` — biome-specific gameplay rules and interactions.
-- `blocks/` — one design file per confirmed biome-specific block.
-
-Create these files when a biome is selected; do not create placeholder biome pages that imply unapproved concepts are finalized.
+- `blocks/README.md` — index for confirmed biome-specific block designs.
 
 ## Shared principles
 
@@ -32,3 +39,4 @@ Create these files when a biome is selected; do not create placeholder biome pag
 - Gravity changes should be readable and intentional rather than random punishment.
 - Environmental storytelling may hint at the vanished civilization without exposing every mystery.
 - Rarity and danger are separate design dimensions.
+- Keep unresolved choices explicitly provisional; do not treat a folder or placeholder as proof that its mechanics are finalized.
