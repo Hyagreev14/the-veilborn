@@ -55,6 +55,12 @@ Exploration should connect discovery, resource gathering, learning the dimension
 - Multiplayer world state should remain consistent for everyone.
 - Performance and practical implementation should shape ambitious ideas.
 
+## Related design documents
+
+- [Full dimension design](dimension.md) — broad world vision, sky, island geography, silver oceans, ruins, exploration, and technical boundaries.
+- [Dimension mechanics](mechanics.md) — gravity principles, restoration direction, and progression-loop notes.
+- [Biome index](../biomes/biomes.md) — the agreed ten-biome roster and links to each biome's documents.
+
 ## Open questions
 
 - Exact dimension entry and world-generation implementation (entry method remains secret)
