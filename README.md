@@ -94,3 +94,7 @@ For now, use GitHub Issues to propose features, report problems, or discuss subs
 The Veilborn is licensed under the MIT License. See [LICENSE](LICENSE) for the full terms.
 
 Minecraft is a trademark of Microsoft. The Veilborn is an independent fan project and is not affiliated with, endorsed by, or sponsored by Mojang or Microsoft.
+
+## Documentation status
+
+This README and the information in it are subject to change without notice as The Veilborn evolves. Features, plans, technical decisions, compatibility details, and timelines may be revised, replaced, or removed during development. Unless explicitly marked as implemented, descriptions of features should be treated as goals or proposals rather than guarantees. Check the repository for the latest information.
