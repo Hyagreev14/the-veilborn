@@ -65,6 +65,6 @@ Exploration should connect discovery, resource gathering, learning the dimension
 
 - Exact dimension entry and world-generation implementation (entry method remains secret)
 - Silver ocean behavior and fluid implementation
-- Final biome list and distribution
+- Distribution, boundaries, and transitions among the agreed ten biomes
 - Detailed gravity rules and transitions
 - Structure generation and restoration stages
