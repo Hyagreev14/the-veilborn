@@ -1,5 +1,9 @@
 # The Open Expanse — Biome-Specific Blocks
 
-This directory is reserved for individual design documents for blocks confirmed to belong specifically to **The Open Expanse**.
+> **Status:** No biome-exclusive blocks are finalized.
 
-No biome-specific blocks are finalized yet. Add a file only after a block's role and design are agreed. Shared block families belong in `docs/blocks/`, not here.
+This directory is reserved for design documents for blocks confirmed to belong specifically to **The Open Expanse**.
+
+The biome's terrain palette has not been finalized. Do not create a block entry just to fill this directory. Shared dimension stone belongs in [the shared block index](../../../blocks/blocks.md), and ore/material progression belongs in [the ore index's design documents](../../../ores/veilcryst.md) and [Aetherium's design](../../../ores/aetherium.md).
+
+When a distinctive block has an agreed gameplay or visual purpose, add its own design page here and link it from this README.
