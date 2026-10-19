@@ -8,7 +8,7 @@
     "Name": "minecraft:stone"
   },
   "default_fluid": {
-    "Name": "minecraft:air"
+    "Name": "minecraft:water"
   },
   "noise": {
     "min_y": -64,
@@ -21,10 +21,118 @@
     "type": "minecraft:sequence",
     "sequence": [
       {
-        "type": "minecraft:block",
-        "result_state": {
-          "Name": "minecraft:calcite"
+        "type": "minecraft:condition",
+        "if_true": {
+          "type": "minecraft:biome",
+          "biome_is": ["veilborn:open_expanse"]
+        },
+        "then_run": {
+          "type": "minecraft:block",
+          "result_state": {"Name": "minecraft:calcite"}
         }
+      },
+      {
+        "type": "minecraft:condition",
+        "if_true": {
+          "type": "minecraft:biome",
+          "biome_is": ["veilborn:silver_sea"]
+        },
+        "then_run": {
+          "type": "minecraft:block",
+          "result_state": {"Name": "minecraft:quartz_block"}
+        }
+      },
+      {
+        "type": "minecraft:condition",
+        "if_true": {
+          "type": "minecraft:biome",
+          "biome_is": ["veilborn:pale_wilds"]
+        },
+        "then_run": {
+          "type": "minecraft:block",
+          "result_state": {"Name": "minecraft:bone_block"}
+        }
+      },
+      {
+        "type": "minecraft:condition",
+        "if_true": {
+          "type": "minecraft:biome",
+          "biome_is": ["veilborn:shattered_heights"]
+        },
+        "then_run": {
+          "type": "minecraft:block",
+          "result_state": {"Name": "minecraft:andesite"}
+        }
+      },
+      {
+        "type": "minecraft:condition",
+        "if_true": {
+          "type": "minecraft:biome",
+          "biome_is": ["veilborn:resonant_fields"]
+        },
+        "then_run": {
+          "type": "minecraft:block",
+          "result_state": {"Name": "minecraft:amethyst_block"}
+        }
+      },
+      {
+        "type": "minecraft:condition",
+        "if_true": {
+          "type": "minecraft:biome",
+          "biome_is": ["veilborn:gravity_fracture"]
+        },
+        "then_run": {
+          "type": "minecraft:block",
+          "result_state": {"Name": "minecraft:deepslate"}
+        }
+      },
+      {
+        "type": "minecraft:condition",
+        "if_true": {
+          "type": "minecraft:biome",
+          "biome_is": ["veilborn:fallen_monuments"]
+        },
+        "then_run": {
+          "type": "minecraft:block",
+          "result_state": {"Name": "minecraft:tuff"}
+        }
+      },
+      {
+        "type": "minecraft:condition",
+        "if_true": {
+          "type": "minecraft:biome",
+          "biome_is": ["veilborn:silent_remnants"]
+        },
+        "then_run": {
+          "type": "minecraft:block",
+          "result_state": {"Name": "minecraft:polished_deepslate"}
+        }
+      },
+      {
+        "type": "minecraft:condition",
+        "if_true": {
+          "type": "minecraft:biome",
+          "biome_is": ["veilborn:veiled_reach"]
+        },
+        "then_run": {
+          "type": "minecraft:block",
+          "result_state": {"Name": "minecraft:light_gray_concrete"}
+        }
+      },
+      {
+        "type": "minecraft:condition",
+        "if_true": {
+          "type": "minecraft:biome",
+          "biome_is": ["veilborn:outer_veil"]
+        },
+        "then_run": {
+          "type": "minecraft:block",
+          "result_state": {"Name": "minecraft:crying_obsidian"}
+        }
+      },
+      {
+        "type": "minecraft:block",
+        "result_state": {"Name": "minecraft:calcite"}
       }
     ]
   },
@@ -33,12 +141,37 @@
     "fluid_level_floodedness": 0.0,
     "fluid_level_spread": 0.0,
     "lava": 0.0,
-    "temperature": 0.0,
-    "vegetation": 0.0,
-    "continents": 0.0,
-    "erosion": 0.0,
+    "temperature": {
+      "type": "minecraft:noise",
+      "noise": "veilborn:climate_temperature",
+      "xz_scale": 0.002,
+      "y_scale": 0.0
+    },
+    "vegetation": {
+      "type": "minecraft:noise",
+      "noise": "veilborn:climate_humidity",
+      "xz_scale": 0.002,
+      "y_scale": 0.0
+    },
+    "continents": {
+      "type": "minecraft:noise",
+      "noise": "veilborn:climate_continentalness",
+      "xz_scale": 0.001,
+      "y_scale": 0.0
+    },
+    "erosion": {
+      "type": "minecraft:noise",
+      "noise": "veilborn:climate_erosion",
+      "xz_scale": 0.003,
+      "y_scale": 0.0
+    },
     "depth": 0.0,
-    "ridges": 0.0,
+    "ridges": {
+      "type": "minecraft:noise",
+      "noise": "veilborn:climate_weirdness",
+      "xz_scale": 0.004,
+      "y_scale": 0.0
+    },
     "initial_density_without_jaggedness": 0.0,
     "final_density": {
       "type": "minecraft:min",
