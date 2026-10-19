@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "veilborn",
+  "version": "${version}",
+  "name": "The Veilborn",
+  "description": "A mysterious dimension of floating islands, silver waters, and shifting gravity.",
+  "authors": [
+    "Hyagreev14"
+  ],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.hyagreev.veilborn.Veilborn"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "26.3",
+    "java": ">=25"
+  }
+}
