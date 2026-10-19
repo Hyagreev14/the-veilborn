@@ -13,7 +13,7 @@ This is the first code scaffold for Minecraft Java Edition 26.3 with Fabric.
 
 - Minecraft Java Edition 26.3.
 - A Java 25 JDK.
-- Internet access for the first Gradle build.
+- Internet access for the first Gradle Wrapper build.
 - PowerShell on Windows.
 
 ## Build on Windows
@@ -21,11 +21,16 @@ This is the first code scaffold for Minecraft Java Edition 26.3 with Fabric.
 Open PowerShell in the repository folder and run:
 
 ```powershell
-Set-ExecutionPolicy -Scope Process Bypass
-.\build.ps1
+.\gradlew.bat build
 ```
 
-The script downloads Gradle 9.6.0 into the local `.build-tools` folder if needed, then builds the mod. The JAR should appear under `build\libs\`.
+The Gradle Wrapper downloads the pinned Gradle 9.6.0 distribution on first use and reuses it afterward. The mod JAR should appear under `build\libs\`.
+
+To clean generated build output:
+
+```powershell
+.\gradlew.bat clean
+```
 
 If the build fails, keep the complete error output; do not guess at dependency versions.
 
