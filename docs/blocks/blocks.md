@@ -8,17 +8,21 @@ This index tracks blocks intended for use across the dimension rather than belon
 
 | Block family | Role | Status |
 |---|---|---|
-| Veilstone | Dimension stone family for terrain and construction variants | Name and role selected; detailed variants remain open |
+| [Veilstone](veilstone.md) | Dimension stone family for terrain and construction variants | Name and role selected; detailed variants remain open |
 
 Potential Veilstone forms may include natural stone, cracked stone, bricks, chiseled blocks, slabs, stairs, and walls. Treat these as candidate variants, not a commitment to implement every form.
 
-## Naming distinction
+## Ore and material progression
 
-- **Veilstone** is a stone/block family, not an ore or progression material.
-- **Veilcryst** is the name selected for the first new ore/material tier.
-- **Aetherium** remains the final planned new ore/material tier.
+Ore/material designs are maintained separately so stone families are not confused with progression tiers.
 
-Only Veilcryst and Aetherium are currently planned as new ore tiers beyond vanilla Diamond. Shared decorative or functional blocks may be documented here when their concepts are selected.
+| Material | Intended role | Design document |
+|---|---|---|
+| Diamond | Vanilla baseline | Vanilla Minecraft |
+| [Veilcryst](../ores/veilcryst.md) | First new tier; traversal and situational environmental utility | [Veilcryst design](../ores/veilcryst.md) |
+| [Aetherium](../ores/aetherium.md) | Final planned new tier; specialist equipment | [Aetherium design](../ores/aetherium.md) |
+
+**Veilstone is not an ore tier.** Veilcryst and Aetherium are the only two new ore/material tiers currently planned beyond vanilla Diamond. Additional crafting components or stations must not accidentally become extra ore tiers.
 
 ## Future entries
 
