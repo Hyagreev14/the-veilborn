@@ -13,11 +13,9 @@
   "noise": {
     "min_y": -64,
     "height": 384,
-    "size_horizontal": 1,
-    "size_vertical": 2
-  },
+      },
   "spawn_target": [],
-  "surface_rule": {
+  "material_rule": {
     "type": "minecraft:sequence",
     "sequence": [
       {
