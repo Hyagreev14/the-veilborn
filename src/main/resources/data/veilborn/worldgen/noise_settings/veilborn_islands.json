@@ -1,13 +1,12 @@
 {
   "sea_level": 24,
   "disable_mob_generation": false,
-  "aquifers_enabled": false,
   "legacy_random_source": false,
   "default_block": {
-    "Name": "minecraft:stone"
+    "id": "minecraft:stone"
   },
   "default_fluid": {
-    "Name": "minecraft:water"
+    "id": "minecraft:water"
   },
   "noise": {
     "min_y": -64,
@@ -28,7 +27,7 @@
         "then_run": {
           "type": "minecraft:block",
           "result_state": {
-            "Name": "minecraft:calcite"
+            "id": "minecraft:calcite"
           }
         }
       },
@@ -43,7 +42,7 @@
         "then_run": {
           "type": "minecraft:block",
           "result_state": {
-            "Name": "minecraft:quartz_block"
+            "id": "minecraft:quartz_block"
           }
         }
       },
@@ -58,7 +57,7 @@
         "then_run": {
           "type": "minecraft:block",
           "result_state": {
-            "Name": "minecraft:bone_block"
+            "id": "minecraft:bone_block"
           }
         }
       },
@@ -73,7 +72,7 @@
         "then_run": {
           "type": "minecraft:block",
           "result_state": {
-            "Name": "minecraft:andesite"
+            "id": "minecraft:andesite"
           }
         }
       },
@@ -88,7 +87,7 @@
         "then_run": {
           "type": "minecraft:block",
           "result_state": {
-            "Name": "minecraft:amethyst_block"
+            "id": "minecraft:amethyst_block"
           }
         }
       },
@@ -103,7 +102,7 @@
         "then_run": {
           "type": "minecraft:block",
           "result_state": {
-            "Name": "minecraft:deepslate"
+            "id": "minecraft:deepslate"
           }
         }
       },
@@ -118,7 +117,7 @@
         "then_run": {
           "type": "minecraft:block",
           "result_state": {
-            "Name": "minecraft:tuff"
+            "id": "minecraft:tuff"
           }
         }
       },
@@ -133,7 +132,7 @@
         "then_run": {
           "type": "minecraft:block",
           "result_state": {
-            "Name": "minecraft:polished_deepslate"
+            "id": "minecraft:polished_deepslate"
           }
         }
       },
@@ -148,7 +147,7 @@
         "then_run": {
           "type": "minecraft:block",
           "result_state": {
-            "Name": "minecraft:light_gray_concrete"
+            "id": "minecraft:light_gray_concrete"
           }
         }
       },
@@ -163,23 +162,19 @@
         "then_run": {
           "type": "minecraft:block",
           "result_state": {
-            "Name": "minecraft:crying_obsidian"
+            "id": "minecraft:crying_obsidian"
           }
         }
       },
       {
         "type": "minecraft:block",
         "result_state": {
-          "Name": "minecraft:calcite"
+          "id": "minecraft:calcite"
         }
       }
     ]
   },
   "noise_router": {
-    "barrier": 0,
-    "fluid_level_floodedness": 0,
-    "fluid_level_spread": 0,
-    "lava": 0,
     "temperature": {
       "type": "minecraft:noise",
       "noise": "veilborn:climate_temperature",
@@ -211,7 +206,6 @@
       "xz_scale": 0.004,
       "y_scale": 0
     },
-    "initial_density_without_jaggedness": 0,
     "final_density": {
       "type": "minecraft:min",
       "left": {
@@ -222,46 +216,46 @@
             "type": "minecraft:add",
             "left": {
               "type": "minecraft:mul",
-              "argument": {
+              "left": {
                 "type": "minecraft:noise",
                 "noise": "veilborn:island_shape",
                 "xz_scale": 0.025,
                 "y_scale": 0.025
               },
-              "value": 0.15
+              "right": 0.15
             },
             "right": {
               "type": "minecraft:mul",
-              "argument": {
+              "left": {
                 "type": "minecraft:noise",
                 "noise": "veilborn:island_shape",
                 "xz_scale": 0.012,
                 "y_scale": 0.025
               },
-              "value": 0.35
+              "right": 0.35
             }
           },
           "right": {
             "type": "minecraft:add",
             "left": {
               "type": "minecraft:mul",
-              "argument": {
+              "left": {
                 "type": "minecraft:noise",
                 "noise": "veilborn:island_shape",
                 "xz_scale": 0.005,
                 "y_scale": 0.025
               },
-              "value": 0.30
+              "right": 0.3
             },
             "right": {
               "type": "minecraft:mul",
-              "argument": {
+              "left": {
                 "type": "minecraft:noise",
                 "noise": "veilborn:island_shape",
                 "xz_scale": 0.0025,
                 "y_scale": 0.025
               },
-              "value": 0.20
+              "right": 0.2
             }
           }
         },
@@ -340,8 +334,6 @@
         }
       }
     },
-    "vein_toggle": 0,
-    "vein_ridged": 0,
-    "vein_gap": 0
+    "chunk_surface_level": 0
   }
 }
