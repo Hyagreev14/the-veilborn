@@ -217,10 +217,53 @@
       "left": {
         "type": "minecraft:add",
         "left": {
-          "type": "minecraft:noise",
-          "noise": "veilborn:island_shape",
-          "xz_scale": 0.006,
-          "y_scale": 0.025
+          "type": "minecraft:add",
+          "left": {
+            "type": "minecraft:add",
+            "left": {
+              "type": "minecraft:mul",
+              "argument": {
+                "type": "minecraft:noise",
+                "noise": "veilborn:island_shape",
+                "xz_scale": 0.025,
+                "y_scale": 0.025
+              },
+              "value": 0.50
+            },
+            "right": {
+              "type": "minecraft:mul",
+              "argument": {
+                "type": "minecraft:noise",
+                "noise": "veilborn:island_shape",
+                "xz_scale": 0.012,
+                "y_scale": 0.025
+              },
+              "value": 0.35
+            }
+          },
+          "right": {
+            "type": "minecraft:add",
+            "left": {
+              "type": "minecraft:mul",
+              "argument": {
+                "type": "minecraft:noise",
+                "noise": "veilborn:island_shape",
+                "xz_scale": 0.005,
+                "y_scale": 0.025
+              },
+              "value": 0.20
+            },
+            "right": {
+              "type": "minecraft:mul",
+              "argument": {
+                "type": "minecraft:noise",
+                "noise": "veilborn:island_shape",
+                "xz_scale": 0.0025,
+                "y_scale": 0.025
+              },
+              "value": 0.10
+            }
+          }
         },
         "right": {
           "type": "minecraft:constant",
