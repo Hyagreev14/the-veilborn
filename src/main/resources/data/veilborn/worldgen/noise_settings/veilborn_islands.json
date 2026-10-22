@@ -235,7 +235,7 @@
             "type": "minecraft:gradient",
             "axis": "y",
             "tiling": "clamp_to_edge",
-            "from_coordinate": 8,
+            "from_coordinate": -22,
             "to_coordinate": 38,
             "from_value": -1,
             "to_value": 1
@@ -245,7 +245,7 @@
             "axis": "y",
             "tiling": "clamp_to_edge",
             "from_coordinate": 38,
-            "to_coordinate": 68,
+            "to_coordinate": 98,
             "from_value": 1,
             "to_value": -1
           }
@@ -258,7 +258,7 @@
               "type": "minecraft:gradient",
               "axis": "y",
               "tiling": "clamp_to_edge",
-              "from_coordinate": 76,
+              "from_coordinate": 40,
               "to_coordinate": 112,
               "from_value": -1,
               "to_value": 1
@@ -268,7 +268,7 @@
               "axis": "y",
               "tiling": "clamp_to_edge",
               "from_coordinate": 112,
-              "to_coordinate": 148,
+              "to_coordinate": 184,
               "from_value": 1,
               "to_value": -1
             }
@@ -279,8 +279,8 @@
               "type": "minecraft:gradient",
               "axis": "y",
               "tiling": "clamp_to_edge",
-              "from_coordinate": 154,
-              "to_coordinate": 180,
+              "from_coordinate": 126,
+              "to_coordinate": 182,
               "from_value": -1,
               "to_value": 1
             },
@@ -288,8 +288,8 @@
               "type": "minecraft:gradient",
               "axis": "y",
               "tiling": "clamp_to_edge",
-              "from_coordinate": 180,
-              "to_coordinate": 210,
+              "from_coordinate": 182,
+              "to_coordinate": 238,
               "from_value": 1,
               "to_value": -1
             }
