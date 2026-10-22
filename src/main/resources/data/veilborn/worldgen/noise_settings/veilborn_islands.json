@@ -228,7 +228,7 @@
                 "xz_scale": 0.025,
                 "y_scale": 0.025
               },
-              "value": 0.50
+              "value": 0.15
             },
             "right": {
               "type": "minecraft:mul",
@@ -251,7 +251,7 @@
                 "xz_scale": 0.005,
                 "y_scale": 0.025
               },
-              "value": 0.20
+              "value": 0.30
             },
             "right": {
               "type": "minecraft:mul",
@@ -261,13 +261,13 @@
                 "xz_scale": 0.0025,
                 "y_scale": 0.025
               },
-              "value": 0.10
+              "value": 0.20
             }
           }
         },
         "right": {
           "type": "minecraft:constant",
-          "value": 0.12
+          "value": -0.08
         }
       },
       "right": {
